@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Load TensorFlow.js. This is required to use coco-ssd model. -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+        <!-- Load the coco-ssd model. -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+    </head>
+    <body>
+        <img id="img" src="dog.jpg">
+        <div id="result"></div>
+        <script>
+            const img=document.getElementById("img");
+            cocoSsd.load().then(model => {
+                model.detect(img).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img1" src="bear.jpg">
+        <div id="result1"></div>
+        <script>
+            const img1=document.getElementById("img1");
+            cocoSsd.load().then(model => {
+                model.detect(img1).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result1").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img2" src="camel.jpg">
+        <div id="result2"></div>
+        <script>
+            const img2=document.getElementById("img2");
+            cocoSsd.load().then(model => {
+                model.detect(img2).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result2").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img3" src="cat.jpg">
+        <div id="result3"></div>
+        <script>
+            const img3=document.getElementById("img3");
+            cocoSsd.load().then(model => {
+                model.detect(img3).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result3").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img4" src="Crocodile.jpg">
+        <div id="result4"></div>
+        <script>
+            const img4=document.getElementById("img4");
+            cocoSsd.load().then(model => {
+                model.detect(img4).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result4").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img5" src="elephant.jpg">
+        <div id="result5"></div>
+        <script>
+            const img5=document.getElementById("img5");
+            cocoSsd.load().then(model => {
+                model.detect(img5).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result5").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img6" src="fox.jpg">
+        <div id="result6"></div>
+        <script>
+            const img6=document.getElementById("img6");
+            cocoSsd.load().then(model => {
+                model.detect(img6).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result6").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img7" src="giraffe.jpg">
+        <div id="result7"></div>
+        <script>
+            const img7=document.getElementById("img7");
+            cocoSsd.load().then(model => {
+                model.detect(img7).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result7").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img8" src="horse.jpg">
+        <div id="result8"></div>
+        <script>
+            const img8=document.getElementById("img8");
+            cocoSsd.load().then(model => {
+                model.detect(img8).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result8").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img9" src="leopard.jpg">
+        <div id="result9"></div>
+        <script>
+            const img9=document.getElementById("img9");
+            cocoSsd.load().then(model => {
+                model.detect(img9).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result9").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img10" src="lion.jpg">
+        <div id="result10"></div>
+        <script>
+            const img10=document.getElementById("img10");
+            cocoSsd.load().then(model => {
+                model.detect(img10).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result10").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img11" src="rabbit.jpg">
+        <div id="result11"></div>
+        <script>
+            const img11=document.getElementById("img11");
+            cocoSsd.load().then(model => {
+                model.detect(img11).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result11").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img12" src="snake.jpg">
+        <div id="result12"></div>
+        <script>
+            const img12=document.getElementById("img12");
+            cocoSsd.load().then(model => {
+                model.detect(img12).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result12").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+        <img id="img13" src="tiger.jpg">
+        <div id="result13"></div>
+        <script>
+            const img13=document.getElementById("img13");
+            cocoSsd.load().then(model => {
+                model.detect(img13).then(predictions => {
+                    console.log("Predictions: ", predictions);
+                    predictions.forEach(item => {
+                        console.log("class", item.class);
+                        document.getElementById("result13").innerHTML = item.class;
+                    })
+                });
+            });
+        </script>
+    </body>
+</html>

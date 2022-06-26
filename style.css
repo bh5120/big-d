@@ -1,0 +1,17 @@
+*{
+    background-color: #B9D9F2;
+}
+button{
+    background-color: white;
+    margin-left: 680px;
+    margin-top: 50px;
+    width: 150px;
+    height: 30px;
+    font-size: large;
+    font: bold;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    margin-top: 200px;
+}
